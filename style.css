@@ -1,0 +1,567 @@
+.slideout-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 256px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+}
+
+.slideout-panel {
+    position:relative;
+    z-index: 1;
+    will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: scroll;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+/* for slideoutMenu */
+
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.showContent{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.toggle-button{
+     border: 0;
+    background: rgba(233, 150, 122, 0); 
+}
+.fa-bars{
+      font-size: 20px;
+}
+.header{
+      padding: 25px 110px; 
+}
+.header a{
+    color: #26272d;
+    font-size: 16px; 
+}
+.badge{
+    padding: 5px 18px;
+    background-color: #267df4;
+    border-radius: 15px; 
+    font-size: 16px;
+}
+.fa-apple, .fa-play{
+    margin-right: 7px;
+}
+.presentation{
+    background-image: url('images/banner_background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.content-future{
+    margin: 0 auto;
+    width: 50%;  
+    margin-top: 100px;
+}
+.content-future h1{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 62px;
+}
+.content-future p{
+    font-size: 20px; 
+    color: #8c8f94;
+    margin: 40px 0;
+}
+.content-future button{
+    border: 1px solid #d9dcde;
+    background: rgba(139, 0, 0, 0);
+    padding: 11px 25px;
+    border-radius: 16px;  
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+}
+.iphone-img{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+.iphone-img img{
+  width: 100%;
+}
+.info, .protect, .ourPlace, .txt-gallery, .geiIt-content, .reviews, .plan{
+    padding: 110px 110px;
+    background: white;
+}
+.info i{
+    font-size: 40px;
+    color: #267df4;
+}
+.info h3{
+    margin-top: 30px;
+    margin-bottom: 30px;  
+}
+.info p, .protect p, .ourPlace p{
+  margin-bottom: 30px;
+      font-size: 17px;
+    color: #8c8f94;
+}
+.line{
+   width: 100%;
+   height: 1px;
+   background-color: #f4f4f4;
+}
+.showContent h2{
+   font-family: 'Varela Round', sans-serif;
+   font-size: 42px; 
+   margin-bottom: 30px;  
+}
+.protect{
+ position: relative;
+}
+.protect .btn{
+    background: #267df4;
+    border-radius: 25px;
+    padding: 8px 35px;
+    color: #fff; 
+    border: 1px solid #e9e9ea;
+    background: rgba(38, 125, 244, 0);
+    color: #26272d;
+    font-size: 16px;
+        margin: 30px 0;
+
+}
+.protect .btn-blue{
+    background: #267df4;
+    border-radius: 25px;
+    padding: 8px 35px;
+    color: #fff;  
+}
+.protect-img img{
+    position: absolute;
+    bottom: -214px;
+    right: 50%;
+}
+#txt-partners{
+    font-size: 12px;
+    color: #26272d;
+    font-weight: bold;  
+}
+.ourPlace{
+    position: relative;
+    overflow: hidden; 
+}
+.mapImg img{
+    position: absolute;
+    bottom: -20px;
+    left: 50%; 
+}
+.blueLine{
+    height: 2px;
+    width: 50px;
+    background-color: #267df4;
+    margin: 0 auto;  
+}
+.txt-gallery{
+  text-align: center;
+}
+.gallery-conteiner{
+  background-color: #f5f5f8;
+  overflow: hidden;
+}
+.gallery-conteiner .slick-slide img{
+      opacity: 0.6;
+      transition: all 300ms ease;
+       transform: scale(0.7);
+  
+}
+.gallery-conteiner .slick-current img{
+    opacity: 1;
+    transform: scale(1.08);
+    margin: 0 auto;
+}
+
+.txt-gallery p{
+margin-top: 30px;
+}
+.geiIt-content form, .letter form{
+    margin: 0 auto;
+    overflow: hidden;
+    background: rgba(150, 198, 198, 0);
+    padding: 3px 3px 3px 9px;
+    border: 1px solid #cbcbce;
+    border-radius: 20px;
+    width: 50%;
+}
+.geiIt-content input[ type="email"], .letter input[ type="email"] {
+    margin-top: 6px;
+    border: 0;
+    background: rgba(153, 50, 204, 0);
+    font-size: 16px;
+    width: 70%;
+    float: left;
+}
+.geiIt-content input[ type="submit"], .letter input[ type="submit"] {
+    background: #6fc754;
+    border: 1px solid #6fc754;
+    border-radius: 20px;
+    padding: 8px 28px;
+    font-size: 16px;
+    float: right;
+    width: 30%;
+}
+.geiIt-content{
+  text-align: center;
+}
+.geiIt-content + p{
+      font-size: 12px;
+    margin-bottom: 40px;
+}
+.geiIt-content:last-child p{
+      margin-top: 55px;
+    margin-bottom: 30px;
+}
+.center.slick-active img{
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+.center.slick-center img{
+    opacity: 1;
+    transform: scale(1.08);
+}
+input[placeholder="Sent Invite"],  input[placeholder="Subscribe"]{
+  color: white;
+}
+/* .arrow-input{
+
+} */
+.download{
+  color: #bdbdc4;
+}
+img[alt="App Store"]{
+  border: 1px solid white;
+  border-radius: 25px;
+}
+.reviews{
+
+}
+.photo-gallery{
+    margin: 0 auto;
+}
+.photo-gallery img{
+      margin: 0 auto;
+      border-radius: 74px;
+}
+.slick-prev:before, .slick-next:before{
+      color: #2e1f1f;
+      font-size: 30px;
+}
+.slick-prev{
+  left: -28px;
+}
+.slick-next{
+  right: -28px;
+}
+.reviews, .plan{
+   margin: 0 auto;
+}
+.text{
+      text-align: center;
+      padding: 90px 0 30px;
+}
+.text p:first-child {
+  font-size: 26px;
+}
+.text p:last-child {
+  font-size: 20px;
+  color: #8c8f94;
+}
+.reviews .slick-active{
+  opacity: 0.5;
+}
+.reviews .slick-current{
+   opacity: 1; 
+}
+.yellow-star{
+  text-align: center;
+ 
+}
+.yellow-star i{
+   color: #f2bc3b;
+   font-size: 23px;
+}
+.yellow-star p{
+  margin-top: 65px;
+}
+.plan-wrapper{
+    background-color: #f4f4f5;
+    overflow: hidden;
+}
+.radio-btn {
+    border-radius: 25px;
+    border: 0;
+    padding: 14px 30px;
+    font-weight: bold;
+    outline: none;
+    background: rgba(215, 201, 215, 0);
+    color: #a2a3a5;
+    margin: 3px;
+}
+.active-btn{
+    background: #fff;
+    color: #333638;
+}
+.radio-wrap{
+      border: 1px solid #d5d6d7;
+      border-radius: 25px;
+      display: inline-block;
+}
+.starter{
+    background: #ebebed;
+    padding: 60px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+}
+.pro{
+    background: #ebebed;
+    padding: 60px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+}
+.active-block{
+    background-color: #fff;
+    transform: scale(1.1);
+}
+.letter-container{
+  padding: 110px 110px;
+
+}
+.letter{
+    text-align: center;
+        padding-bottom: 80px;
+}
+.letter p{
+    color: #8c8f94;
+    margin-top: 25px;
+}
+input{
+  outline: none;
+}
+.bottom-menu{
+  padding-top: 80px;
+}
+.text-story{
+  margin: 30px 0;
+  color: #a8abae;
+}
+li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #26272d;
+    
+}
+.links-menu{
+  overflow: hidden;
+}
+.links-menu > div{
+      float: left;
+}
+.links-menu a{
+  color: #a8abae;
+}
+.links-menu a:hover{
+  color: #626365;
+}
+.icons-social{
+  color: #bdbec0;
+  padding: 30px 0;
+}
+.icons-social i{
+  margin-right: 20px;
+  font-size: 20px;
+}
+.icons-social a{
+  color: #bdbec0;
+}
+.icons-social a :hover{
+  color: #626365;
+}
+.first-txt{
+      font-size: 32px;
+    margin-bottom: 30px;
+}
+.plan .price{
+  font-size: 11px;
+    border: 1px solid #dededf;
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.plan .preposition{
+    color: #8c8f94;
+    font-size: 20px;
+    margin: 50px 0;
+}
+.fa-check{
+  color: #6fc754;
+  margin-right: 10px;
+}
+.order-btn{
+    background: rgba(42, 127, 244, 0);
+    border: 2px solid #2a7ff4;
+    border-radius: 15px;
+    padding: 7px 40px;
+    margin-top: 40px;
+    color: #2a7ff4;
+}
+.active-block .order-btn{
+  color: #fff;
+  background-color: #2a7ff4;
+}
+.wrapper-menu{
+    background-color: #26272d;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+.wrapper-menu > p{
+  color: #fff;
+  margin-bottom: 17px;
+}
+.services li a{
+  color: #fff;
+}
+.services li a:hover{
+  color: #267df4;
+}
+.services{
+  padding: 0;
+}
+.app-serv{
+    color: #e7e7e7;
+    background: #267df4;
+    padding: 10px;
+    border: 1px solid #267df4;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 17px;
+}
+
+@media (max-width: 1200px){
+   .wrapper-pro-start{
+        margin-top: 70px;
+   }
+
+}
+@media (max-width: 992px){
+  .protect-img img{
+        position: relative;
+        bottom: auto;
+        right: auto;
+        padding: 0 15px;
+        width: 100%;
+    }
+    .mapImg img{
+       position: relative;
+        bottom: auto;
+        left: 0; 
+        padding: 0 15px;
+        width: 100%;
+        margin-top: 70px;
+    }
+    .geiIt-content input[ type="email"]{
+      width: 95%;
+      margin-bottom: 6px;
+      margin-left: 12px;
+    }
+    .geiIt-content input[ type="submit"]{
+      width: 100%;
+    }
+    .geiIt-content form{
+      padding: 9px;
+    }
+    .geiIt-content input[ type="email"], .letter input[ type="email"]{
+      width: 50%;
+    }
+    .geiIt-content input[ type="submit"], .letter input[ type="submit"]{
+      width: 50%;
+    }
+
+}
+
+@media (min-width: 991px){
+  .protect{
+    margin-bottom: 400px;
+    }
+    .ourPlace{
+      margin-bottom: 300px;
+    }
+
+}
+@media (max-width: 700px){
+   .header {
+    padding: 25px 25px;
+    }
+    .content-future{
+          width: 100%;
+        overflow: hidden;
+    }
+    .info, .protect, .ourPlace, .txt-gallery, .geiIt-content, .reviews, .plan{
+          padding: 110px 20px;
+    }
+    .gallery-conteiner .slick-slide img{
+      width: 50%;
+    }
+    .geiIt-content form, .letter form{
+      width: 100%;
+    }
+    .radio-btn{
+        margin: 0;
+        width: 100%;
+    }
+    .starter, .pro{
+      padding: 60px 15px;
+    }
+    .letter-container{
+          padding: 110px 20px;
+    }
+    .slick-next {
+        right: 0px;
+    }
+    .slick-prev {
+        left: 0;
+    }
+    .geiIt-content input[ type="email"], .letter input[ type="email"]{
+      width: 100%;
+    }
+    .geiIt-content form, .letter form{
+      padding: 3px;
+      width: 70%;
+    }
+    .geiIt-content input[ type="submit"], .letter input[ type="submit"]{
+          width: 100%;
+    }
+
+}
+@media (max-width: 500px){
+  .starter, .pro{
+    width: 100%;
+  }
+  .slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: visible;
+}
+}
